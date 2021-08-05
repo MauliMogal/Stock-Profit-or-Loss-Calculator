@@ -9,17 +9,33 @@
     <script src="app.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="main-section">
       <h1>Check Profit/Loss on your Stock</h1>
       <form class="form-grid">
-        <label>Purchase Price:(₹)</label>
-        <input type="text" placeholder="Enter Cost Price of Stock" /><br />
-        <label>Stock Quantity:</label>
-        <input type="text" placeholder="Enter Quantity of Stock" /><br />
-        <label>Current Price:(₹)</label>
-        <input type="text" placeholder="Enter Current Price of Stock" /><br />
+        <label>Purchase Price (₹):</label>
+        <input
+          class="input"
+          type="text"
+          placeholder="Enter Purchase Price of Stock"
+          required
+        /><br />
+        <label>Stock Quantity :</label>
+        <input
+          class="input"
+          type="text"
+          placeholder="Enter Quantity of Stock"
+          required
+        /><br />
+        <label>Current Price (₹):</label>
+        <input
+          class="input"
+          type="text"
+          placeholder="Enter Current Price of Stock"
+          required
+        /><br />
         <button type="submit">Check</button>
       </form>
+      <div class="output"></div>
     </div>
   </body>
 </html>
