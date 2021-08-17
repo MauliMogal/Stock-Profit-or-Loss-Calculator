@@ -6,36 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stock Profit Calculator</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="app.js"></script>
   </head>
   <body>
     <div class="main-section">
       <h1>Check Profit/Loss on your Stock</h1>
-      <form class="form-grid">
-        <label>Purchase Price (₹):</label>
+      <label for="initial-price"
+        >Initial Price (₹):
         <input
-          class="input"
-          type="text"
+          id="initial-price"
+          type="number"
           placeholder="Enter Purchase Price of Stock"
           required
-        /><br />
-        <label>Stock Quantity :</label>
+      /></label>
+      <label for="stock-quantity"
+        >Stock Quantity :
         <input
-          class="input"
-          type="text"
+          id="stock-quantity"
+          type="number"
           placeholder="Enter Quantity of Stock"
           required
-        /><br />
-        <label>Current Price (₹):</label>
+      /></label>
+      <label for="current-price"
+        >Current Price (₹):
         <input
-          class="input"
-          type="text"
+          id="current-price"
+          type="number"
           placeholder="Enter Current Price of Stock"
           required
-        /><br />
-        <button type="submit">Check</button>
-      </form>
-      <div class="output"></div>
+      /></label>
+      <button id="submit-btn">Check</button>
+      <div id="output-box"></div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
