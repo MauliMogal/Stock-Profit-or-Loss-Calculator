@@ -46,7 +46,6 @@ header h1 {
   margin: auto;
   display: block;
 }
-
 .output {
   font-size: x-large;
   font-weight: 600;
@@ -85,4 +84,8 @@ footer ul.social-links {
 
 i.fab {
   margin-right: 0.25rem;
+}
+
+a {
+  text-decoration: none;
 }
