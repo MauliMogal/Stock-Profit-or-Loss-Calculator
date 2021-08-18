@@ -37,14 +37,14 @@ header h1 {
   outline: #fff;
   padding: 0.6rem 1rem;
   margin: 1rem auto;
-  border: 2px solid red;
+  border: 2px solid black;
   border-radius: 0.5rem;
   width: 100%;
   max-width: 325px;
 }
 
 .btn-check {
-  background: red;
+  background:black;
   border: none;
   color: #fff;
   padding: 0.7rem 1rem;
@@ -61,4 +61,36 @@ header h1 {
   font-weight: 600;
   margin: 2rem 0;
   text-align: center;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background: black;
+}
+
+footer ul.social-links {
+  width: 100%;
+  min-height: 5vh;
+  text-align: center;
+}
+
+.social-links li {
+  margin: 1rem 2rem;
+  display: inline-block;
+}
+
+.social-links li a {
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+}
+
+.social-links li a:hover {
+  background: white;
+  color: #000;
+  border-radius: 0.5rem;
+}
+
+i.fab {
+  margin-right: 0.25rem;
 }
