@@ -22,7 +22,15 @@ function submitHandler() {
 }
 
 function calculateProfitAndLoss(initial, quantity, current) {
-  if (current > initial) {
+  if (initial === "" || quantity === "" || current === "") {
+    outputBox.innerHTML = "Please enter all the values.<br><br>";
+  } else if (
+    Number.parseInt(quantity) <= 0 ||
+    Number.parseInt(initial) <= 0 ||
+    Number.parseInt(current) < 0
+  ) {
+    outputBox.innerHTML = "Please enter values greater than 0.<br><br>";
+  } else if (current > initial) {
     let profit = ((current - initial) * quantity).toFixed(2);
     let profitPercentage = ((current - initial) / (initial / 100)).toFixed(2);
     outputBox.innerHTML =
