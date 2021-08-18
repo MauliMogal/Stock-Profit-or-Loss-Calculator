@@ -6,6 +6,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
 }
 
 .main-section {
@@ -17,7 +18,47 @@ body {
   box-shadow: 0 0 10px 2px;
 }
 
-label {
+header h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.input-label {
   display: block;
-  padding-bottom: 1rem;
+  font-size: larger;
+  margin: 2rem 0px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input {
+  font-size: large;
+  display: block;
+  outline: #fff;
+  padding: 0.6rem 1rem;
+  margin: 1rem auto;
+  border: 2px solid red;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 325px;
+}
+
+.btn-check {
+  background: red;
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: #fff;
+  margin: auto;
+  display: block;
+}
+
+.output {
+  font-size: x-large;
+  font-weight: 600;
+  margin: 2rem 0;
+  text-align: center;
 }

@@ -4,38 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stock Profit Calculator</title>
+    <title>Stock Profile & Loss Calculator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="main-section">
-      <h1>Check Profit/Loss on your Stock</h1>
-      <label for="initial-price"
+      <header><h1>Stock Profile & Loss Calculator</h1></header>
+
+      <label class="input-label" for="initial-price"
         >Initial Price (₹):
         <input
+          class="input"
           id="initial-price"
           type="number"
           placeholder="Enter Purchase Price of Stock"
           required
       /></label>
-      <label for="stock-quantity"
+      <label class="input-label" for="stock-quantity"
         >Stock Quantity :
         <input
+          class="input"
           id="stock-quantity"
           type="number"
           placeholder="Enter Quantity of Stock"
           required
       /></label>
-      <label for="current-price"
+      <label class="input-label" for="current-price"
         >Current Price (₹):
         <input
+          class="input"
           id="current-price"
           type="number"
           placeholder="Enter Current Price of Stock"
           required
       /></label>
-      <button id="submit-btn">Check</button>
-      <div id="output-box"></div>
+      <button id="submit-btn" class="btn-check">Tell Me!!</button>
+      <div id="output-box" class="output"></div>
     </div>
     <script src="app.js"></script>
   </body>
