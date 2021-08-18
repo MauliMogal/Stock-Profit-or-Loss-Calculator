@@ -1,9 +1,22 @@
-# Stock-Profit-or-Loss-Calculator
+# Stock-Profit-&-Loss-Calculator
 
-What is it?
+An application created using JavaScript that checks if the stock bought by the user gives them profit or loss!
 
-This app is created with vanilla-JS that shows how much profit or loss we have.
+### This application checkes the user's stock purchase price against the current stock price to display if the user gained or lost.
+Live demo of the application: https://stockprofitcalculator.netlify.app/
+<hr />
 
-How does it work?
+## PREREQUISITES
+* HTML
+* CSS
+* JavaScript
 
-Enter three values in the text fields, the cost price of the stock, number of stocks purchased and the current price of it. It will show if its a profit or loss by amount and percentage.
+<hr />
+
+## WORKING
+1. User enters the current stock price, the purchase stock price, and the stock quantity to check if the user gained or lost in absolute and percentage.
+
+<hr />
+
+## My Learnings
+- Changing theme of the site using javascript
