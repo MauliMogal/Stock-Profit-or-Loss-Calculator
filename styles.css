@@ -57,17 +57,15 @@ img {
   max-width: 325px;
 }
 
-/* FOOTER */
 footer {
   width: 100%;
   background: black;
 }
 
 footer ul.social-links {
-  width: 70%;
+  width: 85%;
   min-height: 5vh;
   text-align: center;
-  display: inline;
 }
 
 .social-links li {
@@ -86,6 +84,6 @@ footer ul.social-links {
   border-radius: 0.5rem;
 }
 
-a {
-  text-decoration: none;
+i.fab {
+  margin-right: 0.25rem;
 }
