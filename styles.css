@@ -9,14 +9,14 @@ body {
   font-family: sans-serif;
 }
 
-.main-section {
+/* .main-section {
   width: 800px;
   max-width: 80%;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 10px 2px;
-}
+} */
 
 header h1 {
   text-align: center;
