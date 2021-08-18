@@ -6,12 +6,12 @@ let outputBox = document.querySelector("#output-box");
 
 submitBtn.addEventListener("click", submitHandler);
 
-const imgProfit = document.createElement('img');
-imgProfit.src  = '/images/stonks.gif'
-const imgLoss = document.createElement('img');
-imgLoss.src  = '/images/not-stonks.gif'
-const imgEven = document.createElement('img');
-imgEven.src  = '/images/even-steven.gif'
+const imgProfit = document.createElement("img");
+imgProfit.src = "/images/stonks.gif";
+const imgLoss = document.createElement("img");
+imgLoss.src = "/images/not-stonks.gif";
+const imgEven = document.createElement("img");
+imgEven.src = "/images/even-steven.gif";
 
 function submitHandler() {
   let ip = Number(initialPrice.value);
@@ -29,16 +29,21 @@ function calculateProfitAndLoss(initial, quantity, current) {
       "You gained " +
       profitPercentage +
       "%</br>Your total profit is ₹ " +
-      profit + "<br><br>";
-      document.querySelector('#output-box').appendChild(imgProfit);
+      profit +
+      "<br><br>";
+    document.querySelector("#output-box").appendChild(imgProfit);
   } else if (initial > current) {
     let loss = ((initial - current) * quantity).toFixed(2);
     let lossPercentage = ((initial - current) / (initial / 100)).toFixed(2);
     outputBox.innerHTML =
-      "You lost " + lossPercentage + "%</br>Your total loss is ₹ " + loss + "<br><br>";
-      document.querySelector('#output-box').appendChild(imgLoss);
+      "You lost " +
+      lossPercentage +
+      "%</br>Your total loss is ₹ " +
+      loss +
+      "<br><br>";
+    document.querySelector("#output-box").appendChild(imgLoss);
   } else {
     outputBox.innerHTML = "You make neither a profit nor a loss. <br><br>";
-    document.querySelector('#output-box').appendChild(imgEven);
+    document.querySelector("#output-box").appendChild(imgEven);
   }
 }

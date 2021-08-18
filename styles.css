@@ -51,7 +51,10 @@ header h1 {
   font-weight: 600;
   margin: 2rem 0;
   text-align: center;
-  max-width: fit-content;
+}
+
+img {
+  max-width: 325px;
 }
 
 /* FOOTER */
@@ -61,7 +64,7 @@ footer {
 }
 
 footer ul.social-links {
-  width: 100%;
+  width: 70%;
   min-height: 5vh;
   text-align: center;
   display: inline;
@@ -81,10 +84,6 @@ footer ul.social-links {
   background: white;
   color: #000;
   border-radius: 0.5rem;
-}
-
-i.fab {
-  margin-right: 0.25rem;
 }
 
 a {
