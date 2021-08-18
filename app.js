@@ -7,9 +7,9 @@ let outputBox = document.querySelector("#output-box");
 submitBtn.addEventListener("click", submitHandler);
 
 function submitHandler() {
-  let ip = initialPrice.value;
-  let qty = stockQuantity.value;
-  let curr = currentPrice.value;
+  let ip = Number(initialPrice.value);
+  let qty = Number(stockQuantity.value);
+  let curr = Number(currentPrice.value);
 
   calculateProfitAndLoss(ip, qty, curr);
 }
