@@ -19,7 +19,10 @@ function calculateProfitAndLoss(initial, quantity, current) {
     let profit = ((current - initial) * quantity).toFixed(2);
     let profitPercentage = ((current - initial) / (initial / 100)).toFixed(2);
     outputBox.innerHTML =
-      "You gained " + profitPercentage + "%. </br>Your total profit is ₹ " + profit;
+      "You gained " +
+      profitPercentage +
+      "%. </br>Your total profit is ₹ " +
+      profit;
   } else if (initial > current) {
     let loss = ((initial - current) * quantity).toFixed(2);
     let lossPercentage = ((initial - current) / (initial / 100)).toFixed(2);
