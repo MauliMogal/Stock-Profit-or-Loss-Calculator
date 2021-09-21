@@ -6,7 +6,7 @@ An application created using JavaScript that checks if the stock bought by the u
 Live demo of the application: https://stockprofitcalculator.netlify.app/
 <hr />
 
-## PREREQUISITES
+## Programming Languages:
 * HTML
 * CSS
 * JavaScript
