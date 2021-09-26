@@ -27,7 +27,7 @@ function calculateProfitAndLoss(initial, quantity, current) {
   } else if (
     Number.parseInt(quantity) <= 0 ||
     Number.parseInt(initial) <= 0 ||
-    Number.parseInt(current) < 0
+    Number.parseInt(current) <= 0
   ) {
     outputBox.innerHTML = "Please enter values greater than 0.<br><br>";
   } else if (current > initial) {
